@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TechBrief — What's Next in Tech</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>THE DAILY TECH INTELLIGENCE</span>
+      <span id="today"></span>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+
+      <a href="#" class="logo">
+        <span class="logo-dot"></span>
+        TECH<span>BRIEF</span>
+      </a>
+
+      <nav class="desktop-nav">
+        <a href="#latest">Latest</a>
+        <a href="#ai">AI</a>
+        <a href="#software">Software</a>
+        <a href="#startups">Startups</a>
+        <a href="#gadgets">Gadgets</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☾</button>
+        <button class="menu-btn" id="menuBtn">☰</button>
+      </div>
+
+    </div>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#latest">Latest</a>
+      <a href="#ai">AI</a>
+      <a href="#software">Software</a>
+      <a href="#startups">Startups</a>
+      <a href="#gadgets">Gadgets</a>
+    </div>
+  </header>
+
+  <!-- SEARCH -->
+  <div class="search-panel" id="searchPanel">
+    <div class="container search-inner">
+      <input type="text" id="searchInput" placeholder="Search stories, topics, companies...">
+      <button id="closeSearch">×</button>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero container">
+
+      <div class="hero-copy">
+        <div class="eyebrow">
+          <span></span>
+          FEATURED STORY
+        </div>
+
+        <h1>
+          The next era of
+          <em>technology</em>
+          is already here.
+        </h1>
+
+        <p>
+          Clear, sharp and human coverage of the ideas,
+          products and companies reshaping tomorrow.
+        </p>
+
+        <div class="hero-meta">
+          <span>8 MIN READ</span>
+          <span>•</span>
+          <span>AI & FUTURE</span>
+        </div>
+
+        <button class="read-btn" data-article="The AI Shift">
+          Read the story →
+        </button>
+      </div>
+
+      <div class="hero-visual">
+
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+
+        <div class="visual-grid"></div>
+
+        <div class="floating-card card-one">
+          <span class="mini-label">TRENDING</span>
+          <strong>AI Agents</strong>
+          <small>+42% interest</small>
+        </div>
+
+        <div class="floating-card card-two">
+          <span class="mini-label">SIGNAL</span>
+          <strong>Future of Work</strong>
+          <small>Rising fast</small>
+        </div>
+
+        <div class="visual-number">01</div>
+
+      </div>
+
+    </section>
+
+    <!-- TRENDING -->
+    <section class="trending container">
+
+      <div class="section-heading">
+        <span class="section-number">01</span>
+        <h2>Trending now</h2>
+      </div>
+
+      <div class="trend-grid">
+
+        <article class="trend-card">
+          <span class="trend-category">AI</span>
+          <h3>Why AI agents are becoming the new digital coworkers</h3>
+          <p>4 min read</p>
+          <button class="save-btn">♡</button>
+        </article>
+
+        <article class="trend-card">
+          <span class="trend-category">STARTUPS</span>
+          <h3>The tiny teams building surprisingly big products</h3>
+          <p>6 min read</p>
+          <button class="save-btn">♡</button>
+        </article>
+
+        <article class="trend-card">
+          <span class="trend-category">SOFTWARE</span>
+          <h3>Interfaces are changing faster than we think</h3>
+          <p>5 min read</p>
+          <button class="save-btn">♡</button>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- LATEST -->
+    <section class="latest container" id="latest">
+
+      <div class="section-heading">
+        <span class="section-number">02</span>
+        <h2>Latest stories</h2>
+      </div>
+
+      <div class="filter-row">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="ai">AI</button>
+        <button class="filter" data-filter="software">Software</button>
+        <button class="filter" data-filter="startups">Startups</button>
+        <button class="filter" data-filter="gadgets">Gadgets</button>
+      </div>
+
+      <div class="story-grid" id="storyGrid">
+
+        <article class="story-card" data-category="ai">
+          <div class="story-image ai-image">
+            <span>AI</span>
+          </div>
+          <div class="story-content">
+            <div class="story-meta">
+              <span>AI</span>
+              <span>7 MIN</span>
+            </div>
+            <h3>AI is moving from chatbot to coworker</h3>
+            <p>
+              The next generation of tools won't just answer questions.
+              They'll help complete the work.
+            </p>
+            <button class="story-link" data-article="AI is moving from chatbot to coworker">
+              Read →
+            </button>
+          </div>
+        </article>
+
+        <article class="story-card" data-category="software">
+          <div class="story-image software-image">
+            <span>CODE</span>
+          </div>
+          <div class="story-content">
+            <div class="story-meta">
+              <span>SOFTWARE</span>
+              <span>5 MIN</span>
+            </div>
+            <h3>The quiet return of beautifully designed software</h3>
+            <p>
+              As products become more capable, thoughtful design is becoming
+              a competitive advantage.
+            </p>
+            <button class="story-link" data-article="Beautifully designed software">
+              Read →
+            </button>
+          </div>
+        </article>
+
+        <article class="story-card" data-category="startups">
+          <div class="story-image startup-image">
+            <span>BUILD</span>
+          </div>
+          <div class="story-content">
+            <div class="story-meta">
+              <span>STARTUPS</span>
+              <span>8 MIN</span>
+            </div>
+            <h3>Why small startup teams can move incredibly fast</h3>
+            <p>
+              Fewer layers, sharper decisions and highly focused teams are
+              changing how products get built.
+            </p>
+            <button class="story-link" data-article="Small startup teams">
+              Read →
+            </button>
+          </div>
+        </article>
+
+        <article class="story-card" data-category="gadgets">
+          <div class="story-image gadget-image">
+            <span>DEVICES</span>
+          </div>
+          <div class="story-content">
+            <div class="story-meta">
+              <span>GADGETS</span>
+              <span>4 MIN</span>
+            </div>
+            <h3>The new generation of devices is getting smarter</h3>
+            <p>
+              Hardware companies are exploring ways to make everyday devices
+              more contextual and useful.
+            </p>
+            <button class="story-link" data-article="Smarter devices">
+              Read →
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- BIG QUOTE -->
+    <section class="quote-section">
+      <div class="container quote-inner">
+        <span class="quote-mark">“</span>
+        <blockquote>
+          Technology moves quickly.
+          <em>Understanding it shouldn't.</em>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- AI SECTION -->
+    <section class="topic-section container" id="ai">
+
+      <div class="topic-header">
+        <div>
+          <span class="eyebrow">DEEP DIVE</span>
+          <h2>AI & Intelligence</h2>
+        </div>
+        <button class="view-all">Explore AI →</button>
+      </div>
+
+      <div class="ai-feature">
+
+        <div class="ai-feature-visual">
+          <div class="scan-line"></div>
+          <div class="ai-circle">
+            <span>AI</span>
+          </div>
+          <div class="signal signal-1"></div>
+          <div class="signal signal-2"></div>
+          <div class="signal signal-3"></div>
+        </div>
+
+        <div class="ai-feature-copy">
+          <span class="category-tag">THE BIG IDEA</span>
+          <h3>
+            From asking AI questions
+            to giving AI direction.
+          </h3>
+          <p>
+            The interface between people and intelligent systems is evolving.
+            The interesting question isn't whether machines can generate —
+            it's how we decide what they should do.
+          </p>
+          <button class="read-btn" data-article="The Big AI Idea">
+            Read analysis →
+          </button>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter container">
+
+      <div class="newsletter-copy">
+        <span class="eyebrow">THE BRIEF</span>
+        <h2>Technology, without the noise.</h2>
+        <p>
+          Get the week's most interesting technology stories,
+          explained clearly and delivered to your inbox.
+        </p>
+      </div>
+
+      <form id="newsletterForm">
+        <input
+          type="email"
+          id="emailInput"
+          placeholder="you@example.com"
+          required
+        >
+        <button type="submit">Subscribe →</button>
+      </form>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="container footer-top">
+
+      <div>
+        <a href="#" class="logo">
+          <span class="logo-dot"></span>
+          TECH<span>BRIEF</span>
+        </a>
+        <p>
+          Independent technology intelligence<br>
+          for curious people.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <span>EXPLORE</span>
+          <a href="#latest">Latest</a>
+          <a href="#ai">AI</a>
+          <a href="#software">Software</a>
+        </div>
+
+        <div>
+          <span>COMPANY</span>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Newsletter</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© 2026 TECHBRIEF</span>
+      <span>BUILT FOR THE NEXT GENERATION</span>
+    </div>
+
+  </footer>
+
+  <!-- ARTICLE MODAL -->
+  <div class="modal" id="articleModal">
+
+    <div class="modal-box">
+
+      <button class="modal-close" id="modalClose">×</button>
+
+      <span class="category-tag">TECHBRIEF ANALYSIS</span>
+
+      <h2 id="modalTitle">Article Title</h2>
+
+      <div class="modal-meta">
+        <span>TECHBRIEF</span>
+        <span>•</span>
+        <span>6 MIN READ</span>
+      </div>
+
+      <p>
+        Technology rarely changes everything overnight.
+        More often, new ideas slowly become useful, then familiar,
+        and eventually become part of everyday life.
+      </p>
+
+      <p>
+        The most interesting developments happen where technology
+        meets human behavior. Better interfaces, smarter tools and
+        new ways of working can create opportunities that were difficult
+        to imagine only a few years earlier.
+      </p>
+
+      <p>
+        That is why understanding the direction of technology matters
+        just as much as following individual product launches.
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast">
+    <span>✓</span>
+    <p id="toastMessage">Done!</p>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
